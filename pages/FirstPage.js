@@ -17,26 +17,31 @@ const FirstPage = ({navigation}) => {
           <Text
             style={{
               fontSize: 25,
+              fontWeight: 'bold',
+              textAlign: 'center',
+              marginBottom: 6,
+            }}>
+            Giancarlo Matias Mauricio
+          </Text>
+          <Text
+            style={{
+              fontSize: 25,
               textAlign: 'center',
               marginBottom: 16,
             }}>
-            This is the First Page under First Page Option
+            Proyecto Final de React Native
           </Text>
           <Button
             onPress={() => navigation.navigate('SecondPage')}
-            title="Go to Second Page"
+            title="Ir a Geolocalizacion"
           />
+          <Text></Text>
           <Button
             onPress={() => navigation.navigate('ThirdPage')}
-            title="Go to Third Page"
+            title="Ir a AsincStorage"
           />
         </View>
-        <Text style={{fontSize: 18, textAlign: 'center', color: 'grey'}}>
-          React Navigate Drawer
-        </Text>
-        <Text style={{fontSize: 16, textAlign: 'center', color: 'grey'}}>
-          New Horizons Peru 2020
-        </Text>
+        
       </View>
     </SafeAreaView>
   );

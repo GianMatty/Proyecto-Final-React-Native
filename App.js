@@ -48,12 +48,12 @@ function firstScreenStack({navigation}) {
         name="FirstPage"
         component={FirstPage}
         options={{
-          title: 'First Page', //Set Header Title
+          title: 'Introduccion', //Set Header Title
           headerLeft: () => (
             <NavigationDrawerStructure navigationProps={navigation} />
           ),
           headerStyle: {
-            backgroundColor: '#f4511e', //Set Header color
+            backgroundColor: '#BDBDBD', //Set Header color
           },
           headerTintColor: '#fff', //Set Header text color
           headerTitleStyle: {
@@ -88,7 +88,7 @@ function secondScreenStack({navigation}) {
           <NavigationDrawerStructure navigationProps={navigation} />
         ),
         headerStyle: {
-          backgroundColor: '#f4511e', //Set Header color
+          backgroundColor: '#BDBDBD', //Set Header color
         },
         headerTintColor: '#fff', //Set Header text color
         headerTitleStyle: {
@@ -99,14 +99,14 @@ function secondScreenStack({navigation}) {
         name="SecondPage"
         component={SecondPage}
         options={{
-          title: 'Second Page', //Set Header Title
+          title: 'Geolocalizacion', //Set Header Title
         }}
       />
       <Stack.Screen
         name="ThirdPage"
         component={ThirdPage}
         options={{
-          title: 'Third Page', //Set Header Title
+          title: 'AsyncStorage', //Set Header Title
         }}
       />
     </Stack.Navigator>
@@ -121,7 +121,7 @@ function thirdScreenStack({navigation}) {
           <NavigationDrawerStructure navigationProps={navigation} />
         ),
         headerStyle: {
-          backgroundColor: '#f4511e', //Set Header color
+          backgroundColor: '#BDBDBD', //Set Header color
         },
         headerTintColor: '#fff', //Set Header text color
         headerTitleStyle: {
@@ -156,17 +156,17 @@ function App() {
         }}>
         <Drawer.Screen
           name="FirstPage"
-          options={{drawerLabel: 'First page Option'}}
+          options={{drawerLabel: 'Introduccion'}}
           component={firstScreenStack}
         />
         <Drawer.Screen
           name="SecondPage"
-          options={{drawerLabel: 'Second page Option'}}
+          options={{drawerLabel: 'Geolocalizacion'}}
           component={secondScreenStack}
         />
         <Drawer.Screen
           name="ThirdPage"
-          options={{drawerLabel: 'Third page Option'}}
+          options={{drawerLabel: 'AsyncStorage'}}
           component={thirdScreenStack}
         />
       </Drawer.Navigator>
